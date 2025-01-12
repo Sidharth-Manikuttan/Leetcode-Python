@@ -18,7 +18,7 @@ class Solution:
                     return False
         while stack_locked and stack_unlocked and stack_locked[-1]<stack_unlocked[-1]:
             stack_locked.pop()
-            stack_unlockedpop()
+            stack_unlocked.pop()
         if stack_locked:
             return False
         return True
